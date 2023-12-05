@@ -10,7 +10,7 @@ import SignupForm from './SignupForm';
 const Header = () => {
     let Links = [
         {name: 'Home', link:'/'},
-        {name: 'Following', link:'/following'},
+        {name: 'Weather', link:'/following'},
         {name: 'Chat', link:'/chat'},
         {name: 'Profile', link:'/profile'},
     ]

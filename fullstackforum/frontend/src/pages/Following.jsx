@@ -2,7 +2,7 @@ import React from 'react'
 
 const Following = () => {
   return (
-    <div>Following</div>
+    <div>Weather</div>
   )
 }
 

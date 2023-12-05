@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate  } from 'react-router-dom';
 
 const SignupForm = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigateTo = useNavigate();
 
   const handleSignup = async (e) => {
     e.preventDefault();
@@ -25,6 +26,7 @@ const SignupForm = () => {
       if (response.ok) {
         console.log('User created successfully');
         // Handle success - redirect, display a success message, etc.
+        navigateTo('/');
       } else {
         console.error('Failed to create user');
         // Handle failure - display an error message, etc.
